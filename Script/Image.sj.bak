@@ -1,0 +1,88 @@
+﻿//USEUNIT lib_common
+//USEUNIT lib_const
+//USEUNIT lib_deviceInfo
+//USEUNIT lib_label
+//USEUNIT lib_messageLog
+//USEUNIT lib_OpenJob
+//USEUNIT lib_deviceInfo
+//USEUNIT lib_button
+ 
+/* 
+  *update 1.5.0 a7 
+  *@function
+*/
+
+
+function Image ()
+{
+
+//   if ( ! lib_validate.isDLCODERunning())
+   aqTestCase.Begin("Image Area");
+   lib_common.launchUI();  
+   try
+   { 
+           var ip = lib_deviceInfo.const_Device_IP_Adress; 
+           //*************************************************************************************************************************
+          
+           //validate getting Started when connecting to device
+           Log["Message"](lib_messageLog.msg_CONNECT_DEVICE);           
+           if (lib_common.connectToDevice(ip))
+           {                    
+               //Step 2.1: CONNECTING_DEVICE
+               Log["Message"](lib_messageLog.msg_CONNECTING_DEVICE); 
+               if (lib_OpenJob.openOnDevice( lib_const.const_DefaultJob,lib_const.const_isDefaultJob_Y,lib_const.const_isOpenViaButton_Y) == false)
+                   return ;        
+               lib_button.clickAdvancedSetup();       
+               var visionControl =Sys.Process("DL.CODE").WPFObject("HwndSource: Shell", lib_deviceInfo.const_firmware).WPFObject("Shell", lib_deviceInfo.const_firmware, 1).WPFObject("Border", "", 1).WPFObject("DockPanel", "", 1).WPFObject("Grid", "", 2).WPFObject("ContentPlaceholder").WPFObject("UserControl").WPFObject("LayoutRoot").WPFObject("CentralBorder").WPFObject("Grid", "", 1).WPFObject("TabControl", "", 1).WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 2).WPFObject("VisionControl");
+               visionToolRoiControl=  Sys.Process("DL.CODE").WPFObject("HwndSource: Shell", lib_deviceInfo.const_firmware).WPFObject("Shell", lib_deviceInfo.const_firmware, 1).WPFObject("Border", "", 1).WPFObject("DockPanel", "", 1).WPFObject("Grid", "", 2).WPFObject("ContentPlaceholder").WPFObject("UserControl").WPFObject("LayoutRoot").WPFObject("CentralBorder").WPFObject("Grid", "", 1).WPFObject("TabControl", "", 1).WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 2).WPFObject("VisionControl").WPFObject("Grid", "", 1).WPFObject("Grid", "", 1).WPFObject("PART_MainScrollViewer").WPFObject("ContentViewbox").WPFObject("ImageGrid").WPFObject("Canvas", "", 1).WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WPFObject("PART_DefaultToolsPresenter").WPFObject("ContentPresenter", "", 1).WPFObject("SearchRoiCanvas").WPFObject("visionToolRoiControl").WPFObject("border");
+               visionToolRoiControl.ClickR(301, 190);
+               visionControl.PopupMenu.Click(lib_label.lb_Image);               
+               aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_Load, 1), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_SaveCurrentImage, 2), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_SaveImageBuffer, 4), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_Clean, 5), "Enabled", cmpEqual, true);
+               //'AddToImagesDataBase' is removed -- linhtnguyen comment
+               //aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_AddToImagesDataBase, 5), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Sys.Process("DL.CODE").WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_Rotate180degrees, 8), "Enabled", cmpEqual, true);
+               
+               visionToolRoiControl.ClickR(301, 190);
+               visionControl.PopupMenu.Click(lib_label.lb_Image + "|" + lib_label.lb_AddToSimulatorFolder );
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M120210_000,  lib_const.const_M120_210_000), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M210N235_111, lib_const.const_M210N_235_111), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M220355_040, lib_const.const_M220_355_040), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M220382_010, lib_const.const_M220_382_010), "Enabled", cmpEqual, true);
+               
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M300N482_010, lib_const.const_M300N_482_010), "Enabled", cmpEqual, true);
+               
+               //added from 1.7.0 (two M300N 2MP) -- linhtnguyen comment 
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M300N712_010, lib_const.const_M300N_712_010), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M300N772_010, lib_const.const_M300N_772_010), "Enabled", cmpEqual, true);
+                              
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M410N500_010, lib_const.const_M410N_500_010), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M410N700_010, lib_const.const_M410N_700_010), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M410NXRF_H2x, lib_const.const_M410N_XRF_H2x), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M450N800_030, lib_const.const_M450N_800_030), "Enabled", cmpEqual, true);
+               
+                
+               
+               //add from 1.5.0 (add M220 and M420)
+               /*
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M220220_001, lib_const.const_M220_220_001), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M420420_003, lib_const.const_M420_420_003), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M420420_005, lib_const.const_M420_420_005), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M420420_009, lib_const.const_M420_420_009), "Enabled", cmpEqual, true);
+               aqObject.CheckProperty(Aliases.DL_CODE.WPFObject("HwndSource: PopupRoot", "", 1).WPFObject("PopupRoot", "", 1).WPFObject("Decorator", "", 1).WPFObject("NonLogicalAdornerDecorator", "", 1).WPFObject("MenuItem", lib_label.lb_M420420_012, lib_const.const_M420_420_012), "Enabled", cmpEqual, true);
+               */
+
+               visionToolRoiControl.ClickR(301, 190);
+               visionControl.PopupMenu.Click(lib_label.lb_CodeOptions + "|" + lib_label.lb_DisplayResultsOnImage );   
+           }
+           //lib_common.terminateUI();
+     
+   }
+   catch (e)
+   {
+     Log.Warning(lib_err.err_FUNC_EXCEPTION);
+   }              
+ }
+

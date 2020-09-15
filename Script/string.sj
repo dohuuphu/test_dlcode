@@ -1,0 +1,12 @@
+﻿var  Separato_Str = "[BS]hello";
+var  CustomStringbox_Str = "[BS]Code: ";
+var  CustomStringbox_Fail_Str = "[BS]NOREAD";
+var  FillingParternbox_Str ="[BS]_";
+var  Str_Success = "Success";
+var  Str_Failured = "Failure";
+var  Str_CodeRelatedTool = "CodeRelatedTool";
+var  Str_CodeQualityTool = "CodeQuality";
+var  Str_GlobalStatisticsTool = "GlobalStatisticsTool";
+var  Str_GlobalReadingTool = "GlobalReadingTool";
+var  Str_CustomFieldTool = "CustomFieldTool";
+var  Str_DiagnosticsTool = "DiagnosticsTool";

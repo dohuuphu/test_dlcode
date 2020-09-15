@@ -1,0 +1,6 @@
+﻿var  Separato_Str = "[BS]hello";
+var  CustomStringbox_Str = "[BS]Code: ";
+var  CustomStringbox_Fail_Str = "[BS]NOREAD";
+var  FillingParternbox_Str ="[BS]_";
+var  Read = "Success";
+var  NoRead = "Failure"

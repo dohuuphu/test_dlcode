@@ -1,0 +1,7 @@
+﻿function Test6()
+{
+  //Clicks the 'MSTaskListWClass' object.
+  Aliases.explorer.wndShell_TrayWnd.ReBarWindow32.MSTaskSwWClass.MSTaskListWClass.Click(381, 78);
+  //Clicks the 'ComboBox' object.
+  Aliases.DL_CODE.HwndSource_Shell25.Shell.DockPanel.Grid.Border.TabControl.Grid.Border.ItemsControl.ComboBox.Click(404, 27);
+}

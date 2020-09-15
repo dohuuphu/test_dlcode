@@ -1,0 +1,17 @@
+﻿function Main()
+{
+var p, w, ComboBox;
+
+  // Run Notepad
+ // WshShell.Run("notepad.exe", SW_SHOWNORMAL); 
+
+  // Obtain a combo box object 
+  p = Sys.Process("NOTEPAD");
+  Sys.Keys("~of");
+  w = Sys.Process("NOTEPAD").Window("#32770", "Font", 1);
+  ComboBox = w.Window("ComboBox", "", 5);
+  
+  // Select items
+  //ComboBox.ClickItem("Western");
+  ComboBox.ClickItem(4);
+}

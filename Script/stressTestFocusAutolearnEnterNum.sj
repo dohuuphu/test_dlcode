@@ -1,0 +1,157 @@
+﻿//USEUNIT lib_button
+//USEUNIT lib_common
+//USEUNIT lib_OpenJob
+//USEUNIT lib_deviceInfo
+function stressTestFocusAutolearnEnterNum()
+{
+  aqTestCase.Begin("Stress Test with Focus Autolearn / Acquire PPI enter number");
+  lib_common.launchUI();
+  lib_common.gettingStarted();
+  if(!lib_common.connectToDevice(lib_deviceInfo.const_Device_IP_Adress))
+  {
+    Log.Error("Can not connect to device");
+    aqTestCase.End();
+    return;
+  }
+  if(!lib_OpenJob.openOnDevice( lib_const.const_DefaultJob ,lib_const.const_isDefaultJob_Y,lib_const.const_isOpenViaButton_Y) == true)
+  {
+    Log.Error("Can not open job on device");
+    aqTestCase.End();
+    return;
+  }  
+  ivsMenu = Sys.Process("DL.CODE").WPFObject("HwndSource: Shell", lib_deviceInfo.const_firmware).WPFObject("Shell", lib_deviceInfo.const_firmware, 1).WPFObject("Border", "", 1).WPFObject("DockPanel", "", 1).WPFObject("Grid", "", 1).WPFObject("Border", "", 2).WPFObject("Grid", "", 1).WPFObject("IvsMenu");
+  ivsMenu.WPFMenu.Click("Device|Settings|View Configuration HMP Shortcuts");
+  readingDistanceObj  = Sys.Process("DL.CODE").WPFObject("HwndSource: EscapeSequencesPopup", "Escape Sequences").FindChild("WPFControlText", "Reading Distance (mm)", 1000);
+  if(readingDistanceObj.Exists)
+  {
+    readingDistanceObj = readingDistanceObj.Parent;
+    boxValuesReadingDistance = readingDistanceObj.WPFObject("Border", "", 1).WPFObject("ContentControl", "", 1).WPFObject("StackPanel", "", 1).WPFObject("TextBlock", "*", 1);
+    var str = boxValuesReadingDistance.WPFControlText;
+    str = aqString.Replace(str, "..", ";")
+    aqString.ListSeparator = ";";
+    minValue = aqString.GetListItem(str, 0);
+    minValue = aqString.SubString(minValue, 1, minValue.length - 1);
+    
+    maxValue = aqString.GetListItem(str, 1);
+    maxValue = aqString.SubString(maxValue, 0 , maxValue.length - 1);
+    minVal = aqConvert.StrToInt(minValue);
+    maxVal = aqConvert.StrToInt(maxValue);
+    Sys.Process("DL.CODE").WPFObject("HwndSource: EscapeSequencesPopup", "Escape Sequences").Close();
+    lib_button.clickAdvancedSetup();
+    lib_button.clickIMG_AutoSetup_Static(true);
+    for(var i = minVal; i< maxVal; i++)
+    {
+    
+      var tempObj = Sys.Process("DL.CODE").FindChild("WPFControlText", "General Image Settings", 1000);
+      if(tempObj.Exists)
+      {
+                  // focus on general image settings                
+        if(tempObj.Visible)
+        {
+          delay(1000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "General Image Settings", "TextBlock"];
+          Sys.Process("DL.CODE").FindChild(proArr, valArr, 1000).Click();
+        }
+        else
+        {
+          delay(2000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "Image Settings ", "TextBlock"];
+          var btt = Sys.Process("DL.CODE").FindChild(proArr,valArr, 1000);
+          aqObject.CheckProperty(btt, "Visible", cmpEqual, true);
+          btt.Click();
+        }
+                  
+      }
+      else
+      {
+          delay(2000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "Image Settings ", "TextBlock"];
+          var btt = Sys.Process("DL.CODE").FindChild(proArr,valArr, 1000);
+          aqObject.CheckProperty(btt, "Visible", cmpEqual, true);
+          btt.Click();
+      }
+      if(Sys.Process("DL.CODE").FindChild("WPFControlName", "AcquirePPICommandButton", 1000).Exists)
+      {
+        Log.Error("Device is Acquire PPI, can not run stress test with enter focus reading distance");
+        aqTestCase.End();
+        return;
+      }
+    // set text on focus reading distance box    
+      tempObj = Sys.Process("DL.CODE").FindChild("WPFControlName", "FocusAutolearnCommandButton", 1000);
+      tempObj = tempObj.Parent;
+      tempObj.FindChild("WPFControlName", "TextBox", 1000).set_Text(i);
+      tempObj.FindChild("WPFControlName", "TextBox", 1000).Keys("[Enter]");
+    
+      lib_button.clickPlay(false);
+      delay(5000);
+      lib_button.clickPause(false);
+    
+   }
+  
+ }
+ else
+ {
+   Sys.Process("DL.CODE").WPFObject("HwndSource: EscapeSequencesPopup", "Escape Sequences").Close();
+   for(i = 1; i< 1000; i = i+10)
+   {
+     ivsMenu.WPFMenu.Click("Device|Settings|Settings");
+     var settingsPopup = Sys.Process("DL.CODE").WPFObject("HwndSource: DeviceEnvironmentConfigurationPopup", "Device Environment Configuration").WPFObject("DeviceEnvironmentConfigurationPopup", "Device Environment Configuration", 1);
+     if(!settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).IsExpanded)
+     {
+       settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).set_IsExpanded(true);
+     }
+     settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).WPFObject("StackPanel", "", 1).WPFObject("ParamControl", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ExplicitUpdateIntegerUpDown", "", 1).WPFObject("Spinner").WPFObject("TextBox").Click();
+     settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).WPFObject("StackPanel", "", 1).WPFObject("ParamControl", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ExplicitUpdateIntegerUpDown", "", 1).WPFObject("Spinner").WPFObject("TextBox").SelectAll();
+     settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).WPFObject("StackPanel", "", 1).WPFObject("ParamControl", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ExplicitUpdateIntegerUpDown", "", 1).WPFObject("Spinner").WPFObject("TextBox").Keys("[Del]");
+     settingsPopup.WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("StackPanel", "", 1).WPFObject("ContentExpander", "", 7).WPFObject("StackPanel", "", 1).WPFObject("ParamControl", "", 1).WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ExplicitUpdateIntegerUpDown", "", 1).WPFObject("Spinner").WPFObject("TextBox").Keys(i);
+     settingsPopup.WPFObject("Grid", "", 1).WPFObject("Grid", "", 1).WPFObject("OkButton").ClickButton();
+     var tempObj = Sys.Process("DL.CODE").FindChild("WPFControlText", "General Image Settings", 1000);
+     if(tempObj.Exists)
+     {
+                  // focus on general image settings                
+      if(tempObj.Visible)
+        {
+          delay(1000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "General Image Settings", "TextBlock"];
+          Sys.Process("DL.CODE").FindChild(proArr, valArr, 1000).Click();
+        }
+        else
+        {
+          delay(2000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "Image Settings ", "TextBlock"];
+          var btt = Sys.Process("DL.CODE").FindChild(proArr,valArr, 1000);
+          aqObject.CheckProperty(btt, "Visible", cmpEqual, true);
+          btt.Click();
+        }
+                  
+      }
+      else
+      {
+          delay(2000);
+          var proArr = ["WPFControlText" , "ClrClassName"];
+          var valArr = [ "Image Settings ", "TextBlock"];
+          var btt = Sys.Process("DL.CODE").FindChild(proArr,valArr, 1000);
+          aqObject.CheckProperty(btt, "Visible", cmpEqual, true);
+          btt.Click();
+      }
+      var PPIControl = Sys.Process("DL.CODE").FindChild("WPFControlName", "PPIControl", 1000);
+      var currentPPIValue = PPIControl.WPFObject("Grid", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ContentControl", "", 1).WPFObject("ExplicitUpdateIntegerUpDown", "", 1).WPFObject("Spinner").WPFObject("TextBox").Text;
+      if(i == aqConvert.StrToInt(currentPPIValue) )
+      {
+        Log.Checkpoint("PPI Value was updated OK");
+      }
+      else
+      {
+        Log.Error("PPI Value updated failed");
+      }
+   }
+ }
+  
+  
+  aqTestCase.End();
+}

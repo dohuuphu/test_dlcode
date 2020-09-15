@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="lib_feature">
+			<child name="lib_DataFormating" key="{4CA54D36-8F16-4549-B3BA-57284DD559EF}" path="lib_DataFormating.sj" />
+			<child name="lib_CodeAutolearn" key="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}" path="lib_CodeAutolearn.sj" />
+			<child name="lib_DeleteJob" key="{AD913CC0-7516-4762-9120-B15BD3ED6E72}" path="lib_DeleteJob.sj" />
+			<child name="lib_DeviceSelectedDetail" key="{513218D9-E07C-42D6-9DDB-E8F87F812189}" path="lib_DeviceSelectedDetail.sj" />
+			<child name="lib_OutputSetup" key="{CDE76044-EC07-4F64-9615-8ED15343BE57}" path="lib_OutputSetup.sj" />
+			<child name="lib_CodeAnalysis" key="{296407F4-E7C0-423E-813E-DE3A5E8A008E}" path="lib_CodeAnalysis.sj" />
+			<child name="lib_OpenJob" key="{F2E578D5-4C2C-4BE9-A704-227DD703C891}" path="lib_OpenJob.sj" />
+			<child name="lib_DPM_IMG_DB" key="{915F8CC4-342F-4F8E-B4C2-84C066A4AC4A}" path="lib_DPM_IMG_DB.sj" />
+			<child name="lib_ImageSetup" key="{0C75DE6E-118C-4A3F-8C07-864ECD788F2B}" path="lib_ImageSetup.sj" />
+			<child name="lib_QuickSetup" key="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}" path="lib_QuickSetup.sj" />
+			<child name="lib_UserRole" key="{344DF457-9E8B-41E3-A144-F730BC8D4DD8}" path="lib_UserRole.sj" />
+			<child name="lib_ChangeIP" key="{CFA99AEB-6E45-448A-9B2F-C69D8FC1AC1C}" path="lib_ChangeIP.sj" />
+			<child name="lib_ReadingPhase" key="{5F9C27C7-09E3-4C91-9643-84E91AB5C572}" path="lib_ReadingPhase.sj" />
+			<child name="lib_SaveIMG" key="{B529B40C-1FD5-486B-910B-08CEDA200054}" path="lib_SaveIMG.sj" />
+			<child name="lib_JobList" key="{EE69E0C5-1012-40BB-AF7A-AABD32553584}" path="lib_JobList.sj" />
+			<child name="lib_Action" key="{68970426-B31D-4CB2-8002-CE81B1554BF5}" path="lib_Action.sj" />
+			<child name="lib_SaveJob" key="{9E3EAED2-5675-4D91-91B2-AABB00004750}" path="lib_SaveJob.sj" />
+			<child name="lib_Backup_Restore" key="{A7B65107-3775-468D-885B-75DF9BE9FE67}" path="lib_Backup_Restore.sj" />
+			<child name="lib_CodeSetup" key="{1F096823-27C1-4FE6-89C7-1848C6418309}" path="lib_CodeSetup.sj" />
+			<child name="lib_LoadImage" key="{54A3404A-84BA-423F-94BD-2D8600775864}" path="lib_LoadImage.sj" />
+			<child name="Unit1" key="{7B948C7A-2CDE-4A58-AF51-DDE7CBE2D11C}" path="Unit1.sj" />
+			<child name="lib_DataFormatting" key="{5EABFA96-65E2-4267-9937-2361CEBBD047}" path="lib_DataFormatting.sj" />
+			<child name="string" key="{A4ED01D8-A49D-4B14-B733-7C545CC939F7}" path="string.sj" />
+		</folder>
+		<folder name="StressTest">
+			<child name="StressTest" key="{A2D8B5FD-1133-4922-93EB-E4947FC5BB4E}" path="StressTest.sj" />
+		</folder>
+		<folder name="HMPAutoTest">
+			<child name="HPMControl" key="{41E5EE2F-157E-4FAA-B0B6-0AD10FCD7413}" path="HPMControl.sj" />
+		</folder>
+		<folder name="lib_common">
+			<child name="lib_common" key="{1B115170-B73B-49A7-9105-44FD41350D26}" path="lib_common.sj" />
+			<child name="lib_validate" key="{826870C3-0C08-4DAD-9BB1-D839A6799570}" path="lib_validate.sj" />
+			<child name="lib_button" key="{B452AF07-211F-447D-873F-55490E36C00B}" path="lib_button.sj" />
+			<child name="lib_test" key="{23F85C74-12EC-4278-93E4-36336416B17A}" path="lib_test.sj" />
+			<child name="lib_err" key="{455930A3-5101-4CB7-B5B3-30848B89AE3A}" path="lib_err.sj" />
+			<child name="lib_label" key="{F0DB6F00-23F8-4895-80F0-B2B79CA4DCFC}" path="lib_label.sj" />
+			<child name="lib_const" key="{3E277C21-FDB1-42B0-8E86-108A7E60DF65}" path="lib_const.sj" />
+			<child name="lib_connection" key="{FC4889F0-0D16-403E-91E7-EBDD90D47565}" path="lib_connection.sj" />
+			<child name="lib_verifyDefault" key="{2D0DC69E-8ED1-4B4F-B679-61130C5FE692}" path="lib_verifyDefault.sj" />
+			<child name="lib_messageLog" key="{C05A16F2-B0F3-4D59-9201-3D4595EB125F}" path="lib_messageLog.sj" />
+		</folder>
+		<folder name="lib_TestCase">
+			<folder name="Simulator">
+				<child name="simulator_common" key="{E6914B65-2970-48D0-9935-29D049CAF69F}" path="simulator_common.sj" />
+				<child name="testabc" key="{62021576-CDEE-426A-8F45-8ADF74F3F534}" path="testabc.sj" />
+				<child name="simulator_Detail" key="{12F99F60-BEA4-477E-B858-5301AFC74928}" path="simulator_Detail.sj" />
+			</folder>
+			<folder name="GettingStarted">
+				<folder name="Restore Default">
+					<child name="RestoreDefault" key="{BE780003-0E2F-4CA4-82D1-FEFFC0D1A6F7}" path="RestoreDefault.sj" />
+				</folder>
+				<folder name="UserRole">
+					<child name="UserBasic" key="{1D0E435A-6F0F-496E-9211-6D64FF039844}" path="UserBasic.sj" />
+					<child name="UserRole" key="{94D985EB-5EB9-449B-AB4E-48E85BFFBD4D}" path="UserRole.sj" />
+					<child name="InstallerBasic" key="{694F7FA0-7975-4ABD-9559-EE65047D7307}" path="InstallerBasic.sj" />
+				</folder>
+				<folder name="TaskSelection">
+					<child name="TaksSelection" key="{37FD805A-61A0-4917-BE58-E64BD91B3FC4}" path="TaksSelection.sj" />
+				</folder>
+				<folder name="Change Device IP Address &amp; DHCP">
+					<child name="TC_ChangeIP" key="{A7621F61-6A66-4A0C-A548-C5496C41948C}" path="TC_ChangeIP.sj" />
+				</folder>
+				<folder name="GUI">
+					<folder name="IconOnToolbar">
+						<child name="IconOnToolBar" key="{1DEBC85F-EBE2-43BC-AA83-297F52957D4D}" path="IconOnToolBar.sj" />
+					</folder>
+					<folder name="StatusBar">
+						<child name="StatusBar" key="{A6DC29E3-F002-4E62-B886-AE37FC9B032E}" path="StatusBar.sj" />
+					</folder>
+					<folder name="PopupWindow">
+						<child name="ConfigurationSettings" key="{1EC24767-782B-42EC-84C5-C7AA8CD7628A}" path="ConfigurationSettings.sj" />
+						<child name="WebMonitorSecuritySettings" key="{F6425032-1F3D-4C55-84AA-0EF30429131A}" path="WebMonitorSecuritySettings.sj" />
+						<child name="DeviceEnvironmentConfiguration" key="{069A5C2E-F097-4A76-8834-63F663A6E7E3}" path="DeviceEnvironmentConfiguration.sj" />
+						<child name="ConnectToWindow" key="{E16D4937-CFAF-4BC9-976C-BB3348268AA0}" path="ConnectToWindow.sj" />
+					</folder>
+					<folder name="HelpRightPanel">
+						<child name="HelpRightPanel" key="{DE8A44CD-1E79-4972-914C-2BF641BC95E6}" path="HelpRightPanel.sj" />
+					</folder>
+					<folder name="II_UI AREA">
+						<child name="Image" key="{D8A19469-CFCC-4D61-BFA0-261DDF3F918E}" path="Image.sj" />
+					</folder>
+					<folder name="MenuBar">
+						<child name="Option" key="{D1EE951A-7C55-4BE9-A750-19058EDD5797}" path="Option.sj" />
+						<child name="File" key="{82738D75-FE57-4FC0-9E91-A7AAFF93953D}" path="File.sj" />
+						<child name="Help" key="{26E76D19-E0B5-4243-A425-F2DEA8CEA015}" path="Help.sj" />
+						<child name="Device" key="{AB60ED98-EC60-4703-91C1-726651D18BD4}" path="Device.sj" />
+					</folder>
+				</folder>
+			</folder>
+			<folder name="SerialDevices">
+				<child name="serialDevices" key="{212B191A-EC8D-4AC7-AF6E-9B8934194BE2}" path="serialDevices.sj" />
+				<child name="lib_SER_common" key="{3BB76418-679E-48DD-A09B-6070CFD6463C}" path="lib_SER_common.sj" />
+				<child name="SerialCommunication" key="{DD813772-7FD2-4A39-AC13-A1D8BEBED0D6}" path="SerialCommunication.sj" />
+			</folder>
+			<child name="scriptFormatting" key="{2D9DD043-C9AB-4EC2-9C15-1FE6F10E4FB0}" path="scriptFormatting.sj" />
+			<child name="TC_OpenJob" key="{8B29BFCE-3743-430C-AACF-5BC5B15C3A9A}" path="TC_OpenJob.sj" />
+			<child name="setupInternalNetwork" key="{D13E8DE6-2ACB-46EB-9792-A74B0CE932B5}" path="setupInternalNetwork.sj" />
+			<child name="TC_DeleteJob" key="{E0AF97C9-324C-469D-A0BF-6AB05CC6D646}" path="TC_DeleteJob.sj" />
+			<child name="TC_TerminateUI" key="{7D0DC93A-79F1-45DB-A1C4-073461DD143D}" path="TC_TerminateUI.sj" />
+			<child name="TC_Backup_Restore" key="{A18278B2-2385-4750-8FCC-D84604009D4A}" path="TC_Backup_Restore.sj" />
+			<child name="codeAnalysisDefault" key="{9336A61E-FBA7-4CD2-A226-8D96209D83DA}" path="codeAnalysisDefault.sj" />
+			<child name="changeUISettingsWindow" key="{68450267-A8E4-4B49-BD31-5B608420D0F7}" path="changeUISettingsWindow.sj" />
+			<child name="TC_SaveJob" key="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}" path="TC_SaveJob.sj" />
+			<child name="TC_ChangeEnvironmentConfig" key="{7625929C-13BE-4765-9D14-2F59A9357FC1}" path="TC_ChangeEnvironmentConfig.sj" />
+			<child name="AddDeleteFieldbus" key="{CE0CF251-3500-453C-BF42-923C7FC9529A}" path="AddDeleteFieldbus.sj" />
+			<child name="TC_DataFormatting" key="{E1250892-5F0D-4DA0-B77F-122E219EF5ED}" path="TC_DataFormatting.sj" />
+		</folder>
+		<folder name="Other Feature">
+			<child name="Load_configuration_from_older_version" key="{27AD6C62-1978-47F2-8B9A-F71706A57467}" path="Load_configuration_from_older_version.sj" />
+			<child name="BenchmarkTest" key="{3C723023-D4D8-4B71-9040-37FE25AF126A}" path="BenchmarkTest.sj" />
+		</folder>
+		<folder name="TestMatrixApp">
+			<child name="testMatrix" key="{DF288FE8-86EB-4C95-8840-AFED44B11851}" path="testMatrix.sj" />
+		</folder>
+		<folder name="Z_Test" />
+		<folder name="Pre-release checklist">
+			<child name="installation" key="{9F72376D-F1B7-47DD-AFAB-9B67CDAE86BE}" path="installation.sj" />
+			<child name="testJazz" key="{B178D37E-7077-420D-9F57-1634D45B215E}" path="testJazz.sj" />
+			<child name="upgrade" key="{40972757-1400-451A-A312-914AEB72BBCF}" path="upgrade.sj" />
+		</folder>
+		<folder name="lib_config">
+			<child name="lib_deviceInfo" key="{BE04CCE4-D5F7-40B4-B547-2F2668E0380E}" path="lib_deviceInfo.sj" />
+			<child name="lib_updateConfig" key="{A857BA6D-F0CA-45DA-863E-2CE0B70A38CA}" path="lib_updateConfig.sj" />
+		</folder>
+		<folder name="M320AndOther">
+			<child name="stressTestFocusAutolearn" key="{468AEDBE-0C4D-4913-BD23-B49FED5BBF4B}" path="stressTestFocusAutolearn.sj" />
+			<child name="stressTestFocusAutolearnEnterNum" key="{AEF2005F-A9D7-4B3C-950A-C1ED8A4B8E84}" path="stressTestFocusAutolearnEnterNum.sj" />
+			<child name="Remove_PNG_TIFF_OnImageSaving" key="{4EF10AE0-4F52-4C36-8CAC-C4871AB3C053}" path="Remove_PNG_TIFF_OnImageSaving.sj" />
+			<child name="CreateNewConfiguratio_2Image_2Distances" key="{D47C132A-B777-48D5-B91A-09911DEBC983}" path="CreateNewConfiguratio_2Image_2Distances.sj" />
+			<child name="Load_PNFTIFF_Job_FromOtherDevices" key="{2FD96130-D396-43BA-84AB-755DF336BD44}" path="Load_PNFTIFF_Job_FromOtherDevices.sj" />
+			<child name="VerifyHWAccelerationList" key="{61604E3B-74E5-4982-A21D-FAB0E69F7636}" path="VerifyHWAccelerationList.sj" />
+			<child name="VerifyIlluminator" key="{02E1BCEB-D235-4A78-AC82-C6476C7BEACA}" path="VerifyIlluminator.sj" />
+			<child name="VerifyFocusAutolearn" key="{91E89F56-872D-40D2-80AE-07D419B6BFA7}" path="VerifyFocusAutolearn.sj" />
+			<child name="VerifyExposureTime" key="{75043225-744A-4E44-B488-55F6F2567697}" path="VerifyExposureTime.sj" />
+			<child name="VerifyPartialDecodedCodes" key="{7716B3A8-A46E-4797-A199-6DEFF8DCC958}" path="VerifyPartialDecodedCodes.sj" />
+		</folder>
+		<folder name="PHU_TEST">
+			<child name="Check_property_in_menubar" key="{6BB7BA57-C5E9-4FA8-B939-77A730175660}" path="Check_property_in_menubar.sj" />
+		</folder>
+		<child name="test" key="{72400113-7D99-42EB-9F97-CD971C8187E2}" path="test.sj" />
+		<child name="OnOverlappingWindow" key="{84EF08A6-42C4-4AD8-952E-1DF9C6807F5D}" path="OnOverlappingWindow.sj" />
+		<child name="test_input_string" key="{F8F545A9-CEAB-4A7A-ACD2-56305C4C9454}" path="test_input_string.sj" />
+	</children>
+</Root>

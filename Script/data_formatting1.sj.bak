@@ -1,0 +1,102 @@
+﻿//USEUNIT string
+var Dataformat = Sys.Process("DL.CODE").WPFObject("HwndSource: Shell", "DL.CODE 1.9.0.60").WPFObject("Shell", "DL.CODE 1.9.0.60", 1).WPFObject("Border", "", 1).WPFObject("DockPanel", "", 1).WPFObject("Grid", "", 2).WPFObject("ContentPlaceholder").WPFObject("UserControl").WPFObject("LayoutRoot").WPFObject("Border", "", 3).WPFObject("Grid", "", 1).WPFObject("TabControl", "", 1).WPFObject("StackPanel", "", 1).WPFObject("Grid", "", 1).WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WPFObject("ScrollViewer", "", 1).WPFObject("PropertiesPresenter").WPFObject("UserControl").WPFObject("Grid", "", 1).WPFObject("StackPanel", "", 1);
+  
+function Message_1(stt)
+{
+  if (stt == "Success"){
+//************ Find Separator *********
+    var Separator_PropArr = ["WPFControlName", "Visible"];
+    var Separator_ValArr = ["CollectionSeparatorParamControl" , true ];
+    var Separator = Dataformat.FindChild(Separator_PropArr, Separator_ValArr, 2000); 
+    // Find Separetor box
+    var SeparatorBox_PropArr = ["WPFControlName", "Visible"];
+    var SeparatorBox_ValArr = ["rtbText" , true ];
+    var label = Separator.FindChild(SeparatorBox_PropArr, SeparatorBox_ValArr, 2000);
+  
+  //  if(label.Exists == true){
+  //        Log.Message("fill Separator");
+  //        label.DblClick();
+  //        label.Keys(Separato_Str);
+  //  }
+  //  else
+  //      Log.Message("Can't find Saparator box!!!");
+  }
+      
+//************ Find Custom Field *********
+  var CustomField = Dataformat.WPFObject("ItemsControl", "", 1).FindChild("Name","WPFObject(\"ContentPresenter\", \"\", 1)",2000); 
+  var CustomStringbox = CustomField.FindChild("WPFControlName","rtbText", 2000);  // find CustomString box
+  if(CustomStringbox.Exists == true){
+     Log.Message("Fill CustomString");
+     CustomStringbox.DblClick();
+     if (stt == "Success") CustomStringbox.Keys(CustomStringbox_Str);
+     if (stt == "Failure") CustomStringbox.Keys(CustomStringbox_Fail_Str);
+  }
+  else
+      Log.Message("Can't find CustomString box");
+
+//************ Find Filling Mode *********    
+  var FillingMode_PropArr = ["Name", "ChildCount"];
+  var FillingMode_ValArr = ["WPFObject(\"ComboBox\", \"\", 1)" , "1" ];    
+  var FillingMode = CustomField.FindChild(FillingMode_PropArr,FillingMode_ValArr,2000);
+  if(FillingMode.Exists == true){
+    Log.Message("Filling mode is changing...");
+    FillingMode.ClickItem(1); // change to Fixed length
+    
+  }
+  else
+      Log.Message("noo");
+ 
+//************ Find Filling Pattern *********
+  var FillingPartern = CustomField.FindChild("Name","WPFObject(\"StackPanel\", \"\", 1)",2);
+  var FillingParternbox_PropArr = ["WPFControlName", "Visible"];
+  var FillingParternbox_ValArr = ["rtbText" , true ];
+  var FillingParternbox = FillingPartern.FindChild(FillingParternbox_PropArr, FillingParternbox_ValArr, 2000);
+  if(FillingPartern.Exists == true){
+    Log.Message("Filling pattern");
+    FillingParternbox.DblClick();
+    FillingParternbox.Keys(FillingParternbox_Str);
+    }
+  else
+    Log.Message("Can't find FillingPartern Box");
+    
+    
+//************ Find Field Justification *********
+  var FieldJustification = CustomField.FindChild("Name","WPFObject(\"ParamControl\", \"\", 4)",200);
+  var FieldJustificationbox = FieldJustification.FindChild("Name","WPFObject(\"ComboBox\", \"\", 1)",200);
+  if(FieldJustificationbox.Exists == true){
+    Log.Message("Field Justificationbox is changing...");
+    FieldJustificationbox.ClickItem(1); // change to Right Aligned
+    
+  }
+  else
+      Log.Message("Can't change to Right Aligned");
+      
+}
+
+
+//function Message_2(){
+//  //************ Find Custom Field *********
+//  var CustomField = Dataformat.WPFObject("ItemsControl", "", 1).FindChild("Name","WPFObject(\"ContentPresenter\", \"\", 1)",2000); 
+//  var CustomStringbox = CustomField.FindChild("WPFControlName","rtbText", 2000);  // find CustomString box
+//  if(CustomStringbox.Exists == true){
+//     Log.Message("Fill CustomString");
+//     CustomStringbox.DblClick();
+//     CustomStringbox.Keys(CustomStringbox_Fail_Str);
+//  }
+//  else
+//      Log.Message("Can't find CustomString box");
+//      
+//      
+////************ Find Filling Mode *********    
+//  var FillingMode_PropArr = ["Name", "ChildCount"];
+//  var FillingMode_ValArr = ["WPFObject(\"ComboBox\", \"\", 1)" , "1" ];    
+//  var FillingMode = CustomField.FindChild(FillingMode_PropArr,FillingMode_ValArr,2000);
+//  if(FillingMode.Exists == true){
+//    Log.Message("Filling mode is changing...");
+//    FillingMode.ClickItem(1); // change to Fixed length
+//    
+//  }
+//  else
+//      Log.Message("noo");
+//
+//}
