@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" version="14.0">
+	<children>
+		<folder name="Advanced" moniker="{69583268-92F3-49FA-B573-C831F5ABC27B}">
+			<child name="Script" key="{785FECD2-6A8C-4CC2-BFCB-6F8B0DCD9A24}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script" path="Script\Script.tcScript" />
+		</folder>
+		<child name="KeywordTests" key="{9120BEC6-C61D-45F0-AEEE-69640ADD8F48}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
+		<child name="NameMapping" key="{F0B672EC-44F3-4EE3-BE4C-E21602A973D1}" type="Name Mapping" typeId="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" pluginName="NameMapping" path="NameMapping\NameMapping.tcNM" />
+		<child name="Stores" key="{E421CBD0-8814-4B60-89BF-621D5EB8184E}" type="Stores" typeId="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" pluginName="Stores" path="Stores\Stores.tcStores" />
+		<child name="TestedApps" key="{8A7FE8AB-4674-4A97-A24F-C70D828028A3}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
+	</children>
+	<config language="{E42909F2-4390-4F5D-94B8-FABF59BABFCE}" />
+	<testItems key="{122CCE45-4F1B-45EE-BBA8-11FD1384BB8D}" version="14">
+		<children>
+			<testItem name="2_ONLINE DEVICES" key="{4C607E24-0E3D-41B2-9308-FB681BBA0559}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="GUI" key="{0E1A6E8E-3E23-4BC8-9683-3E704F3DCEC1}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="Init UserRole = Expert" key="{1476C80F-53B9-44D6-A051-D115D49DE202}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="set user role = expert" key="{50104998-2E30-4101-9E35-C5B2C6D1CE20}" group="False" enabled="True" testMoniker="{344DF457-9E8B-41E3-A144-F730BC8D4DD8}initUISetting_UserRole" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Change user role to Expert" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="config UI Settings Window" key="{5CB4907D-DC7A-4429-B16D-F3ABA9E55C44}" group="False" enabled="True" testMoniker="{68450267-A8E4-4B49-BD31-5B608420D0F7}changeUISettingsWindow" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="MenuBar" key="{9C3F2A42-1B2B-4F95-88D4-437B934A878F}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="File" key="{059E41F1-4D06-4D79-9632-C39BE27B945C}" group="False" enabled="False" testMoniker="{82738D75-FE57-4FC0-9E91-A7AAFF93953D}MenuBar_File" count="1" timeout="0" stopOnError="2" stopOnException="2" description="File" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Options" key="{F0556157-BB8E-4F00-97BA-F2308DAB98A0}" group="False" enabled="False" testMoniker="{D1EE951A-7C55-4BE9-A750-19058EDD5797}MenuBar_Options" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Options" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Device" key="{02CA7CB4-F47D-4729-82B6-37485A1DA8BC}" group="False" enabled="True" testMoniker="{AB60ED98-EC60-4703-91C1-726651D18BD4}MenuBar_Device_UserBasic" count="1" timeout="0" stopOnError="2" stopOnException="2" description="btFindDevices (Value = False)&#32;&#32;mean&#32;&#32;&#32;&#32;&#32;&#32;CLOCKED" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="btFindDevices" type="3" localVarName="" varType="0" value="" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="Help" key="{021BE8E6-1CEB-4AF0-908B-9BCAF6E3FA1E}" group="False" enabled="False" testMoniker="{26E76D19-E0B5-4243-A425-F2DEA8CEA015}MenuBar_Help" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Help" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="IconOnToolbar - TS 352" key="{AF4CBCA9-F4F9-4EC5-867D-F225A71970CD}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="IconOnToolbar" key="{49CF96F1-2809-4733-8396-CAE151C2A4C6}" group="False" enabled="True" testMoniker="{1DEBC85F-EBE2-43BC-AA83-297F52957D4D}iconToolbar" count="1" timeout="0" stopOnError="2" stopOnException="2" description="btFindDevices (Value = False)&#32;&#32;mean&#32;&#32;&#32;&#32;&#32;&#32;CLOCKED" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="btFindDevices" type="3" localVarName="" varType="11" value="False" />
+										</testParameters>
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="HelpRightPanel" key="{5395C9BB-1E7A-4524-B15B-DD7D5854142A}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="HelpRightPanel" key="{19D551C2-28FD-4797-8C11-F39A113B6358}" group="False" enabled="True" testMoniker="{DE8A44CD-1E79-4972-914C-2BF641BC95E6}helpRightPanel" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Help Right Panel" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="PopupWindow" key="{400D7957-F435-40B1-8C65-45C13891C1EC}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Configuration Settings" key="{52A4ECAB-94F2-4A3A-96A2-FCFD067DB6E5}" group="False" enabled="False" testMoniker="{1EC24767-782B-42EC-84C5-C7AA8CD7628A}configurationSettings" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Configuration Settings" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Device Environment Configuration" key="{BC7C4F1D-6063-4F06-A6E9-C76E94CDB898}" group="False" enabled="False" testMoniker="{069A5C2E-F097-4A76-8834-63F663A6E7E3}deviceEnvironmentConfiguration" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Device EnvironmentConfiguration" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Connect to Window" key="{9BBEF91C-63ED-45F5-B9DB-E9B943F4A829}" group="False" enabled="False" testMoniker="{E16D4937-CFAF-4BC9-976C-BB3348268AA0}connectToDeviceWindow" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Connect to Device" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="UI Setting" key="{E1CF59A2-F7C9-4D98-901B-05B649A6422A}" group="False" enabled="False" testMoniker="{D1EE951A-7C55-4BE9-A750-19058EDD5797}UISetting_otherWindow" count="1" timeout="0" stopOnError="2" stopOnException="2" description="UI Settings" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Web Monitor Security Settings" key="{B7E62F77-4AFC-458C-8338-0AF4009FC444}" group="False" enabled="False" testMoniker="{F6425032-1F3D-4C55-84AA-0EF30429131A}webMonitorSecuritySettings" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Web Monitor Security Settings" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="tc648_GUI_SaveConfiguration_Cluster" key="{8E1F46EB-BB80-4396-87A9-8D5B36205D74}" group="False" enabled="False" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}tc648_GUI_SaveConfiguration_Cluster" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="IMAGE AREA" key="{D4321871-E37D-4FC7-8C87-74F58AD95D0C}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Image" key="{D8AFC159-A276-4D82-ABE1-6C5EF4EC0645}" group="False" enabled="True" testMoniker="{D8A19469-CFCC-4D61-BFA0-261DDF3F918E}Image" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Image Area" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="SaveLoadImageNotFilter" key="{6A18ED65-BD14-4E52-8CF1-16CA32012210}" group="False" enabled="True" testMoniker="{54A3404A-84BA-423F-94BD-2D8600775864}LoadImagesFilterAndNoFilter" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="StatusBar" key="{AE3609B3-754E-4978-B67B-CFC4C6EB4916}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="StatusBar" key="{E8938C16-22AC-44C3-9C85-24B4D019D471}" group="False" enabled="True" testMoniker="{A6DC29E3-F002-4E62-B886-AE37FC9B032E}statusBar" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Status Bar" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="GUI_ testSuite_655_ScriptFormatting" key="{69AB4FD4-9D46-4BE4-8663-8E45E8B11264}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="testSuite_655_ScriptFormatting" key="{DAAE0303-A48E-4BBF-AC1C-9E40C9911BB2}" group="False" enabled="True" testMoniker="{2D9DD043-C9AB-4EC2-9C15-1FE6F10E4FB0}testSuite_655_ScriptFormatting" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="GETTING STARTED SCREEN" key="{8299ABF9-421F-4E09-B202-ABE9C288F9BA}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="Change Device IP Address &amp; DHCP" key="{D10071F0-E88C-4FFB-AFE6-B01B3A78AE2D}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="DHCP" key="{0A3BC1B5-0A7F-4916-B5A7-DA140172432D}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children>
+											<testItem name="Change DHCP" key="{79902A41-4E77-406B-8F93-7900E8460AFE}" group="False" enabled="True" testMoniker="{A7621F61-6A66-4A0C-A548-C5496C41948C}TC_ChangeDHCP" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+										</children>
+									</testItem>
+									<testItem name="Static" key="{F4351209-7288-44C4-AAAE-EE95289F2054}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children>
+											<testItem name="Default IP 192.168.3.100" key="{F6440383-28F2-45F2-8557-48ECB6F060C5}" group="False" enabled="False" testMoniker="{A7621F61-6A66-4A0C-A548-C5496C41948C}TC_ChangeDefaultIP" count="1" timeout="0" stopOnError="2" stopOnException="2" description="IP must be DHCP before run" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+											<testItem name="Change IP Random" key="{89F50AB8-ADE9-49F7-AEC7-DE052E62385F}" group="False" enabled="False" testMoniker="{A7621F61-6A66-4A0C-A548-C5496C41948C}TC_ChangeIpRandom" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+											<testItem name="Change IP at device Info" key="{E6AE0C5E-530E-46E2-93D8-2DACCAF87938}" group="False" enabled="False" testMoniker="{A7621F61-6A66-4A0C-A548-C5496C41948C}TC_ChangeStatic" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+										</children>
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="TaskSelection" key="{83480DAA-AEA4-43DF-A01A-2D5EBB6FC3BD}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="verifyDeviceSelectedDetail" key="{69FEC7AC-0F36-4AB9-A3C8-ABEC07D88F6D}" group="False" enabled="True" testMoniker="{37FD805A-61A0-4917-BE58-E64BD91B3FC4}verifyDeviceDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="TaskSelection" key="{1DA19F67-F253-425E-B854-0DC54B7DB750}" group="False" enabled="False" testMoniker="{37FD805A-61A0-4917-BE58-E64BD91B3FC4}taskSelection" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Change and verify Environment Window" key="{E8C44033-38EF-4F5E-84E3-B174CE021A16}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Change &amp; verify Enviroment Window" key="{B999F85C-8AD3-436F-BAF5-4BFD37859020}" group="False" enabled="True" testMoniker="{7625929C-13BE-4765-9D14-2F59A9357FC1}change_verifyEnvironmentConfig" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="LOAD &amp; SAVE JOB FROM OLDER VERSION" key="{EF171C1E-9929-45D1-9122-A625649C5630}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name=" Script Formatting" key="{A20C2EBF-C6BA-4918-8703-EF6FFCF60CDB}" group="False" enabled="False" testMoniker="{27AD6C62-1978-47F2-8B9A-F71706A57467}tc_Open_ScriptFormatting" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name=" Continuous - Periodics" key="{FDCDA9DF-C337-4B08-A03D-58C684E16CFD}" group="False" enabled="False" testMoniker="{27AD6C62-1978-47F2-8B9A-F71706A57467}tc_OpenOlderJobFromPC" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Phase Mode - One Shot" key="{1DEEC33F-9636-4F87-82D8-E410BD84F5E1}" group="False" enabled="False" testMoniker="{27AD6C62-1978-47F2-8B9A-F71706A57467}tc_OpenOlderJobFromPC_Phase" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Load configuration from any previous version. Use NI device cause config contains Phase Mode or One shot" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="SAVE-OPEN-DELETE" key="{046A1288-C33B-4113-BA4B-84D3A8F31CE4}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="On Device - XLS" key="{D44F88E0-32C3-472D-B90B-71CB8C1E4377}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="1 Job _ open_Save_Delete" key="{E971B62C-048A-4243-A4D1-6E8760D15279}" group="False" enabled="True" testMoniker="{E0AF97C9-324C-469D-A0BF-6AB05CC6D646}open_Save_DeleteJob" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Multi jobs - Step 1 Open job Default and Save on Device" key="{21A7AEA8-645D-4D93-9A80-2E460A1124AF}" group="False" enabled="True" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}mainSaveOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Job Name load from XLS" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Multi jobs - Step 2 Open these jobs saved on Device" key="{F47FCA8E-A33C-4A62-87F0-6EADCBDA49DA}" group="False" enabled="True" testMoniker="{8B29BFCE-3743-430C-AACF-5BC5B15C3A9A}tc_OpenJobOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Job Name load from XLS" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Multi jobs - Step 3 Delete these jobs saved on Device" key="{79B92E3A-EDBF-48A6-9CEF-F0F32098F5C0}" group="False" enabled="True" testMoniker="{E0AF97C9-324C-469D-A0BF-6AB05CC6D646}tc_DeleteJobOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Job Name load from XLS" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="On PC - XLS" key="{7F58D459-E47C-4166-A4E6-5ED1CE9FFE7A}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Open job Default and save on PC " key="{429A53B5-CCA6-4615-82F4-D70AF6C347CB}" group="False" enabled="True" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}mainSaveOnPC" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Job Name load from XLS" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Open these jobs saved on PC" key="{61A1C09A-6CE9-4A7E-8DF3-AC8074D64757}" group="False" enabled="True" testMoniker="{8B29BFCE-3743-430C-AACF-5BC5B15C3A9A}tc_OpenJobFromPC" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Job Name load from XLS" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Save Overwrite ( Continuous - Periodics)" key="{F6828833-7796-4F90-A0E9-B2B842AC8276}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="LOAD job from Older version then SAVE overwrite on device " key="{7425FD32-6CB4-4BB7-953F-3829DA6BDF02}" group="False" enabled="True" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}loadJobAndSaveOverwite" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="FEATURE" key="{239F8FC2-3C3D-4D3F-857C-626773F1ADA3}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="Automatic Setup" key="{8F622A07-3947-4218-8BEE-ECB8A5E90B69}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="1D" key="{C982346F-597A-43AE-99B1-4C555D1A41FE}" group="False" enabled="True" testMoniker="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}tc_quickSetup1D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="2D" key="{6FC2EDA8-7029-4123-9A61-8E2A38D8AF41}" group="False" enabled="True" testMoniker="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}tc_quickSetup2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="1D or 2D" key="{11302A9C-E5CB-462E-99FC-66FC74C682A4}" group="False" enabled="True" testMoniker="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}tc_quickSetup" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="M220 1D or 2D (Polarized &amp; Non Polarized)" key="{612B0B34-2A0D-4E22-821A-8B791A326E3B}" group="False" enabled="True" testMoniker="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}tc_quickSetup_M220" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Code Autolearn" key="{3298E7C3-A8D9-473F-B3C6-5B2D7120EB83}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Code autolearn then select Add/Discard/Replace" key="{C02889F5-0C88-4B9C-8EA9-02C20886B901}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}performCodeAutolearn_Add_Replace_Discard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Each Code Symbology" key="{0FD4785C-770C-49A0-986E-AEC66B3E8E97}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children>
+											<testItem name="1D" key="{28945A75-6D96-43B3-ABE2-D61DA4C9710E}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}tc_codeAutolearn_1D_2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+											<testItem name=" 2D" key="{3A01DE00-41B2-4B74-BB27-3472FF172971}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}tc_codeAutolearn_1D_2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+											<testItem name="Postal" key="{5E61BEF9-2850-4CDE-B9DA-FA86728632C2}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}tc_codeAutolearn_Postal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+											<testItem name="Digimarc" key="{E37FC0B0-4A66-4E1F-B863-D62459026EC3}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}tc_codeAutolearn_1D_2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+												<testParameters />
+												<children />
+											</testItem>
+										</children>
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="testSuite_364_365_366_Add and Delete Code" key="{DC4FE84B-AC32-4CD6-9A65-116296E10B04}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="1D" key="{8B880C2A-966D-4835-8370-FA34A910BBBF}" group="False" enabled="True" testMoniker="{1F096823-27C1-4FE6-89C7-1848C6418309}addDelete_AllCode1D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="2D" key="{C434D563-AD32-4DA8-9C6D-C7C9AFFE267A}" group="False" enabled="True" testMoniker="{1F096823-27C1-4FE6-89C7-1848C6418309}addDelete_AllCode2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Postal" key="{DC8D48FD-FFD1-4AA3-9F6C-2DA874850A1C}" group="False" enabled="True" testMoniker="{1F096823-27C1-4FE6-89C7-1848C6418309}addDelete_AllCodePostal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Opertating Mode ( Combination/ Collection/ Presentation/ Match Code)" key="{1F1AEB7B-C509-46C7-918B-7E28B3E57D1D}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Opertating Mode ( Combination/ Collection/ Presentation/ Match Code)" key="{A7AEF482-A293-48EC-AD16-3B2C82AE15FD}" group="False" enabled="True" testMoniker="{296407F4-E7C0-423E-813E-DE3A5E8A008E}tc_OperatingMode" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Expected-Excluded Content (only DL.CODE)" key="{38C93A2B-D8BB-4F52-9A2C-F7A0A80262AC}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Expected-Excluded Content (only DL.CODE)" key="{7D4ACA31-BEA3-4BA8-A214-7D7E4B5F6B88}" group="False" enabled="True" testMoniker="{0B1E1C96-FF0F-4F85-AB9C-B932896FF09A}tc_Expected_Exclude_Content" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Host Mode Programing (2D)" key="{711D44F8-0A90-4AA1-A370-300C34CE2526}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="ReadingDistance - Image Quality" key="{04D2729C-4A25-4365-94D8-84868CE57BD0}" group="False" enabled="True" testMoniker="{41E5EE2F-157E-4FAA-B0B6-0AD10FCD7413}testSuite_658_setParamHMP_M220" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="Expected-Excluded Content" key="{C6D28C48-3F50-4646-8CAC-F20293A64F5C}" group="False" enabled="True" testMoniker="{41E5EE2F-157E-4FAA-B0B6-0AD10FCD7413}tc_30931_Expected_ExcludeContent_HMP" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="testSuite_659_SetupInternalNetwork" key="{096612A5-4C73-41C3-AC5B-21CF9E69B0A9}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="testSuite_659_SetupInternalNetwork" key="{D87FAD1E-26A3-4CD4-95ED-1BA8035E31AA}" group="False" enabled="True" testMoniker="{D13E8DE6-2ACB-46EB-9792-A74B0CE932B5}testSuite_659_SetupInternalNetwork" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="testSuite_660_CodeAnalysis" key="{8DDBFA31-A106-470C-BA2B-3A6200872033}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="testSuite_660_CodeAnalysis" key="{8626CF52-0A5E-4DB9-A83E-AD2DC5329A72}" group="False" enabled="True" testMoniker="{9336A61E-FBA7-4CD2-A226-8D96209D83DA}testSuite_660_CodeAnalysis" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="USER ROLES (User Basic and Installer Basic)" key="{9524C9E7-E1F4-4C81-90B0-4BA2D783116E}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="testSuite_363_UserBasic" key="{CFB23B0B-E0D5-4C51-BEED-9AF9F3AA5CF0}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="testSuite_363_verifyUserBasic" key="{5F5B8C8C-7346-4146-B002-B2E0BD364EF5}" group="False" enabled="True" testMoniker="{1D0E435A-6F0F-496E-9211-6D64FF039844}verifyUserBasic" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Change UserRole (common)" key="{A46C2701-FD79-41C0-A52C-C246F84CB8F1}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="testSuite_360_User role not connecting device" key="{8FE196FD-D224-41A7-9F2C-B5E7CDC8F9B1}" group="False" enabled="True" testMoniker="{94D985EB-5EB9-449B-AB4E-48E85BFFBD4D}userRole_notConnectingDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="testSuite_361_User role IS CONNECTING device" key="{D86869B5-87D0-47F1-8D61-850258CE4C89}" group="False" enabled="True" testMoniker="{94D985EB-5EB9-449B-AB4E-48E85BFFBD4D}userRole_ConnectingDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="testSuite_362_InstallerBasic (private)" key="{C8DEEA10-C3BF-4C54-BA8D-EDC32234037F}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="change user role to Installer-Basic" key="{663D5E6E-D4B3-4837-A86E-F758A9A0C4F2}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}changeInstaller_Basic" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="installerBasic_MenuBar_Device" key="{5C611DA7-D5A0-4308-B27C-BB967617C148}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}installerBasic_MenuBar_Device" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="verifyMonitorMode" key="{7D6F3F52-E805-4303-96E4-01A90D7CD2C7}" group="False" enabled="True" testMoniker="{344DF457-9E8B-41E3-A144-F730BC8D4DD8}verifyMonitorMode" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="verifyInstallerBasic_ImageSetup" key="{D8CBCAF8-D906-42EF-A49F-D5F29892B01E}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}verifyInstallerBasic_ImageSetup" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="verifyInstallerBasic_ImageSetup_Monitor" key="{0EE4BD46-A7B6-4119-A9F8-8B69BE8F5957}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}verifyInstallerBasic_ImageSetup_Monitor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="clickSaveImageButton_Monitor" key="{D0DEABBB-3434-443D-9244-7E284BEA447C}" group="False" enabled="True" testMoniker="{B529B40C-1FD5-486B-910B-08CEDA200054}clickSaveImageButton_Monitor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="clickSaveImageButton_Configuration" key="{5FD65748-2F23-482B-AD1B-A97A19D6F15D}" group="False" enabled="True" testMoniker="{B529B40C-1FD5-486B-910B-08CEDA200054}clickSaveImageButton_Configuration" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="addDiagnostic_Passthrough" key="{A6F94BA4-CCE0-4BBB-ADAB-AC2F545258B9}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}addDiagnostic_Passthrough" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="add_MaxImageSetting" key="{12FABC98-78B9-4B08-AEE8-282615F7F72D}" group="False" enabled="True" testMoniker="{4CA54D36-8F16-4549-B3BA-57284DD559EF}add_MaxImageSetting" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="chooseGoodReadSetupMode" key="{8FF3F2A3-DBF3-4389-89B0-DD81DDA3AB49}" group="False" enabled="True" testMoniker="{68970426-B31D-4CB2-8002-CE81B1554BF5}chooseGoodReadSetupMode" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="chooseAcquisitionTrigger" key="{7D4723AA-549F-43A9-B00D-81CB65BE61DA}" group="False" enabled="True" testMoniker="{68970426-B31D-4CB2-8002-CE81B1554BF5}chooseAcquisitionTrigger" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="add_delete_Max_All_Channel" key="{F2B14C9D-D189-450C-8FE6-918080F1FC4A}" group="False" enabled="True" testMoniker="{5F9C27C7-09E3-4C91-9643-84E91AB5C572}add_delete_Max_All_Channel" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="performCodeAutolearn_Add_Replace_Discard" key="{5C073588-D8D7-4BBB-BA71-3D5C80F8D34A}" group="False" enabled="True" testMoniker="{46C8DB76-26D7-4A29-871E-CABCAE7C394D}performCodeAutolearn_Add_Replace_Discard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="addDelete_AllCode1D" key="{333536D5-EDE1-4D0C-84BB-C60D693C09D3}" group="False" enabled="True" testMoniker="{1F096823-27C1-4FE6-89C7-1848C6418309}addDelete_AllCode1D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="addDelete_AllCode2D" key="{BEF99C9C-B758-4284-BEAE-835A0E6DCD1B}" group="False" enabled="True" testMoniker="{1F096823-27C1-4FE6-89C7-1848C6418309}addDelete_AllCode2D" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="InstallerBasicReadingDistance (only M210 and M300 LQL)" key="{C05E4799-DDFC-45E8-96BC-D0BDECA5BACD}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="Reading Distance" key="{47AAA5FE-110D-4BC4-8932-3A3BE191B2F5}" group="False" enabled="True" testMoniker="{694F7FA0-7975-4ABD-9559-EE65047D7307}verifyInstallerBasic_ReadingDistance" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="OTHER FEATURES" key="{52EAA0F2-1522-4C9E-92DB-A64532E1A1D4}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="testSuite_372_Stress Test" key="{F7CC4F53-B93F-4D39-A28D-FCB9E67609E1}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="StressTest_via buttons" key="{CD397FF2-28B1-40E2-904D-E99793BE6822}" group="False" enabled="False" testMoniker="{A2D8B5FD-1133-4922-93EB-E4947FC5BB4E}StressTest" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="StressTest_via IVS menu toolbar" key="{C7A24BCE-4744-4156-89F9-155D11CCEF6B}" group="False" enabled="False" testMoniker="{A2D8B5FD-1133-4922-93EB-E4947FC5BB4E}StressTest_IVSMenuToolbar" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="SaveJob with RandomName" key="{1F5C6E9A-F085-4AA3-8826-87DEC2E46481}" group="False" enabled="False" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}randomSaveOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Input number job which user want to save on Parameter column" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="numJob" type="3" localVarName="" varType="3" value="55" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="StressTest_Laucnh_CloseUI" key="{D62DA32A-010C-48FB-A5D6-0F04E61B440F}" group="False" enabled="False" testMoniker="{A2D8B5FD-1133-4922-93EB-E4947FC5BB4E}StressTest_Laucnh_CloseUI" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="LOAD job from Older version then SAVE overwrite on device _1" key="{3F89F47C-1475-48EF-BB5E-7F94D08C0D4E}" group="False" enabled="False" testMoniker="{B4DE25D4-8E84-4426-A6BC-C70359E991E5}loadJobAndSaveOverwite" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Benchmark" key="{C3C57587-85C1-4FAF-9BDB-8BAF2DBDA095}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="BENCHMARK TEST" key="{B7049832-C03C-4386-AC0E-319F6F5EAE63}" group="False" enabled="False" testMoniker="{3C723023-D4D8-4B71-9040-37FE25AF126A}benchMark" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="TestSuite_739_Backup &amp; Restore Cluster" key="{8F700A8E-30BE-45F8-8776-0F341696CB08}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="backup_restoreCluster_withWarning" key="{19DBFADF-9CBA-40DF-8B2F-46F421A3F6B2}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}backup_restoreCluster_withWarning" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Backup &amp; Restore Cluster" key="{A45FC6B6-0CD5-4BB4-86DC-DE23918F5A44}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}backup_restoreCluster" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="testSuite_355_BACKUP RESTORE" key="{11E54647-0A2C-4685-9F0A-DB4E8523F3D4}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="Restore Default" key="{5D24A7AB-1F1A-4B74-939B-D2B7BC879C0D}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="UI Setting UserRole - Installer Expert" key="{995D6DF5-10EB-4247-9FC6-0EB25E7D1575}" group="False" enabled="True" testMoniker="{344DF457-9E8B-41E3-A144-F730BC8D4DD8}initUISetting_UserRole" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="RestoreDefault" key="{5FF33164-DD80-41C8-B917-573F9C919EF9}" group="False" enabled="True" testMoniker="{BE780003-0E2F-4CA4-82D1-FEFFC0D1A6F7}RestoreDefault" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="External Storage Device" key="{367A12D3-73CA-4039-B765-B32B8073B949}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="backup and restore" key="{4953CA76-5E0B-47E2-BA5D-30AE4A3C101B}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}backup_restore_ToExternalStorageDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Backup &amp; Restore dont include FW" key="{38AF3E68-9B1A-4992-9238-2153EAF018E6}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="singleReader backup" key="{D0815D72-9B0B-49FD-97E2-76F302224E8F}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}singleReaderBackupNoFW" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="RestoreFactoryDefaults" key="{3ED82735-F33B-41B4-A3CF-7CBA99F430EF}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}RestoreFactoryDefaults" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="singleReader restore" key="{B65C9BDE-D684-494A-9090-2EEF9781B728}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}singleReaderRestoreNoFW" count="1" timeout="0" stopOnError="2" stopOnException="2" description="after restore , job list is empty. backup to restore job list" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Backup &amp; Restore include FW" key="{0C93CC42-4AC0-48A8-BB52-256E098FEBDC}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="singleReader backup " key="{C2E8230E-5DA3-41C7-934E-878DD0E15F7D}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}singleReaderBackup" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="RestoreDefaultStartupConfiguration " key="{835EBFCF-943D-449E-972A-BD942AB4263A}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}RestoreDefaultStartupConfiguration" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="RestoreDefaultEnvironment " key="{D4956CDA-8F2D-4DEC-A4E5-DFA5295BE5C0}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}RestoreDefaultEnvironment" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="RestoreFactoryDefaults" key="{78A43E9E-DB98-437E-9457-0E0BACEF477B}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}RestoreFactoryDefaults" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="singleReader restore " key="{B1DD0ED1-B888-4A9E-813A-C5AF8054AC63}" group="False" enabled="True" testMoniker="{A18278B2-2385-4750-8FCC-D84604009D4A}singleReaderRestore" count="1" timeout="0" stopOnError="2" stopOnException="2" description="after restore , job list is empty. backup to restore job list" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="Release checklist" key="{7250C5CC-0E73-4F24-A453-14C94ECCA507}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="1_SIMULATOR DEVICES" key="{8DFC23F5-D90F-4CB8-BAFA-B638F8756D66}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="Each of Simulator" key="{A150D6BB-C0C0-440A-A50F-94077175B721}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children>
+									<testItem name="installation" key="{BE73F47D-D788-4E9A-9472-28CE8C529CA7}" group="False" enabled="False" testMoniker="{9F72376D-F1B7-47DD-AFAB-9B67CDAE86BE}instDL_1_8_0" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="set user role = expert_1" key="{B541A977-F9A1-44E1-8BFC-E504B342B80D}" group="False" enabled="False" testMoniker="{344DF457-9E8B-41E3-A144-F730BC8D4DD8}initUISetting_UserRole" count="1" timeout="0" stopOnError="2" stopOnException="2" description="Change user role to Expert" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="config UI Settings Window_1" key="{085F435A-2F08-450B-9364-7545A2722BD0}" group="False" enabled="False" testMoniker="{68450267-A8E4-4B49-BD31-5B608420D0F7}changeUISettingsWindow" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters />
+										<children />
+									</testItem>
+									<testItem name="M120 " key="{E8C18C81-66E8-47AF-9A25-95BF70A0577C}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="no internal network" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="0" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M210" key="{0932B8EF-D1A7-4335-81D7-F5A85A080A1A}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="1" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M220 POE" key="{BB44AD93-8F58-4FAE-87FB-ACC0FAA3A781}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="7" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M220 DPM" key="{FA1D20B7-702D-476D-91CF-D51A630AA50B}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="8" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M300" key="{03CC7430-1D05-4E9B-BB59-341A60F499D8}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="2" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M300 772-010" key="{3C0EDA27-4DC8-43B0-AB2E-632AAACDF3A8}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="9" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M300 712 010" key="{94852D0E-33F4-45A2-82A0-D4B952D1914A}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="10" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M410 500" key="{209DD185-C178-4B48-B1ED-1AE59EA08F72}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="3" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M410 700" key="{388FECB2-049D-4DD9-8063-68A8AC01413E}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="4" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M410 XRF " key="{47486FCF-D1B2-4889-A7F0-EE2AA1A773BE}" group="False" enabled="True" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="5" />
+										</testParameters>
+										<children />
+									</testItem>
+									<testItem name="M450" key="{147D4F99-4815-411E-A05F-D51E84EEE304}" group="False" enabled="False" testMoniker="{12F99F60-BEA4-477E-B858-5301AFC74928}simulatorDetail" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+										<testParameters>
+											<param0 name="index" type="3" localVarName="" varType="3" value="6" />
+										</testParameters>
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="3_INSTALLATION" key="{244205B7-8E42-4D5F-98AF-B9D3031E86BD}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="unInstall&#32;&#32;-&gt; CCleaner -&gt; re-install" key="{25275D35-56A3-4FED-831A-4D016B920873}" group="False" enabled="True" testMoniker="{9F72376D-F1B7-47DD-AFAB-9B67CDAE86BE}TC_un_inStlGUI" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="2_UPGRADING" key="{52103E31-0438-4E72-87C0-8DD314DECBDA}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children>
+							<testItem name="upgrade to 1.8.0" key="{445503DC-0417-4E24-83A4-1564D99DA091}" group="False" enabled="True" testMoniker="{40972757-1400-451A-A312-914AEB72BBCF}mainDownAndUpgrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="SERIAL DEVICES" key="{240581B7-906C-472E-AFE3-5BE07C13C7AC}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="Random Save on device " key="{07284960-59F9-406C-94D9-270F28488288}" group="False" enabled="True" testMoniker="{212B191A-EC8D-4AC7-AF6E-9B8934194BE2}randomSaveOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="numJob" type="3" localVarName="" varType="3" value="1" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="XLS_Open and Save Job" key="{95C660BE-0EAB-4FB5-AB4D-249FA1AC8A14}" group="False" enabled="True" testMoniker="{212B191A-EC8D-4AC7-AF6E-9B8934194BE2}mainSaveOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem1" key="{C4F9E07E-F12B-4BEE-9A6A-682CEF32ED31}" group="False" enabled="True" testMoniker="{212B191A-EC8D-4AC7-AF6E-9B8934194BE2}tc_OpenJobOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem2" key="{F05ADEB8-4C79-4625-905F-8A41262F823C}" group="False" enabled="True" testMoniker="{212B191A-EC8D-4AC7-AF6E-9B8934194BE2}tc_DeleteJobOnDevice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="ProjectTestItem3" key="{19E2D500-43BE-4038-8A58-6BB9C5494080}" group="False" enabled="False" testMoniker="{D13E8DE6-2ACB-46EB-9792-A74B0CE932B5}testSuite_659_SimulatorSetupInternalNetwork" count="2" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters>
+					<param0 name="index" type="3" localVarName="" varType="3" value="1" />
+				</testParameters>
+				<children />
+			</testItem>
+		</children>
+	</testItems>
+	<variables key="{E97B4105-ADCB-4072-8CE6-02712564A9CA}">
+		<data Version="3" />
+	</variables>
+	<settings key="{FD2D46BA-F660-4E2B-B7D6-6D32CE21DC31}">
+		<settingsVersion value="14.10" />
+		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
+		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Use all processes" />
+				<row val0="Use only tested applications" />
+				<row val0="Use only selected processes" />
+				<row val0="Ignore selected processes" />
+				<row val0="Ignore all processes" />
+			</data>
+		</setting>
+		<setting name="ApplicationHangingProcessList" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="ApplicationHangingTimeout" type="2" value="30000" />
+		<setting name="AzureDevOps_CollectionID" type="5" value="" />
+		<setting name="AzureDevOps_ProjectID" type="5" value="" />
+		<setting name="AzureDevOps_ServerName" type="5" value="" />
+		<setting name="AzureDevOps_TeamProject" type="5" value="" />
+		<setting name="AzureDevOps_TeamProjectCollection" type="5" value="" />
+		<setting name="AzureDevOps_URL" type="5" value="" />
+		<setting name="CLRBridge_PreferredApartmentModel" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Does not matter" />
+				<row val0="Single-threaded apartment" />
+				<row val0="Multi-threaded apartment" />
+			</data>
+		</setting>
+		<setting name="CLRBridge_PreferredArchitecture" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="The same as the operating system" />
+				<row val0="32-bit" />
+				<row val0="64-bit" />
+			</data>
+		</setting>
+		<setting name="CLRBridge_SelectedComponents" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="CountProcessesOfAllUsers" type="1" value="True" />
+		<setting name="DbgServices_Active" type="1" value="True" />
+		<setting name="DbgServices_DepthShown" type="2" value="10" />
+		<setting name="DbgServices_EnableEvents" type="1" value="True" />
+		<setting name="DbgServices_Priority" type="6" rowIndex="3" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="pmLowest" />
+				<row val0="pmLower" />
+				<row val0="pmNormal" />
+				<row val0="pmHigher" />
+				<row val0="pmHighest" />
+			</data>
+		</setting>
+		<setting name="DbgServices_UseExtendedDebugger" type="1" value="True" />
+		<setting name="DraggingDelay" type="2" value="100" />
+		<setting name="General_CurrentImageFormat" type="5" value="106_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_70_0_49_0_52_0_50_0_66_0_67_0_56_0_56_0_45_0_57_0_52_0_48_0_55_0_45_0_52_0_52_0_67_0_57_0_45_0_65_0_66_0_52_0_53_0_45_0_54_0_53_0_54_0_70_0_52_0_51_0_48_0_65_0_70_0_55_0_70_0_57_0_125_0_1_0_0_0_16_0_0_0_98_0_109_0_112_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_1_0_0_0_11_0_0_0_112_0_105_0_120_0_101_0_108_0_102_0_111_0_114_0_109_0_97_0_116_0_0_0_0_0_0_0_0_0_0_0_0_0_" />
+		<setting name="General_DisableDWMBeforeCapturingImage" type="1" value="True" />
+		<setting name="General_ImageFormat" type="5" value="Format: BMP; Pixel Format: Native (no transformation)" />
+		<setting name="General_ObjectTreeModel" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Tree" />
+				<row val0="Flat" />
+			</data>
+		</setting>
+		<setting name="General_ProjectLogLocation" type="5" value="Log" />
+		<setting name="General_UnitsEncoding" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="UTF-16" />
+				<row val0="UTF-8" />
+				<row val0="ANSI" />
+				<row val0="Auto" />
+			</data>
+		</setting>
+		<setting name="Gherkin_ExamplesAreTestCases" type="1" value="False" />
+		<setting name="HipTest_ProjectID" type="2" value="-1" />
+		<setting name="HipTest_ProjectName" type="5" value="The current project is not bound to CucumberStudio." />
+		<setting name="HipTest_SaveResults" type="1" value="True" />
+		<setting name="HipTest_SynchronizeBeforeRun" type="1" value="True" />
+		<setting name="HipTest_SynchronizeOnOpening" type="1" value="True" />
+		<setting name="HipTest_SynchronizeTestRun" type="1" value="False" />
+		<setting name="HipTest_TestRunID" type="5" value="" />
+		<setting name="HipTest_TestRunName" type="5" value="[Test run created last]" />
+		<setting name="JavaBridge_Classes" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="JavaBridge_ClassPaths" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="JavaFXOpenApp_DoNotRecognizeJavaFXStageAsAWTComponent" type="1" value="True" />
+		<setting name="JavaFXOpenApp_ExposedCustomNodes" type="6" rowIndex="-1" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="JavaFXOpenApp_NodeByClassNameFilters" type="6" rowIndex="7" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" val2="False" />
+				<row val0="True" val1="javafx.scene.SubScene" val2="True" />
+				<row val0="True" val1="javafx.scene.control.Control" val2="True" />
+				<row val0="True" val1="javafx.scene.web.WebView" val2="False" />
+				<row val0="False" val1="javafx.scene.canvas.Canvas" val2="True" />
+				<row val0="False" val1="javafx.scene.image.ImageView" val2="True" />
+				<row val0="False" val1="javafx.scene.media.MediaView" val2="True" />
+				<row val0="True" val1="com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer" val2="True" />
+			</data>
+		</setting>
+		<setting name="JavaOpenApp_DoNotRecognizeChildSWTAsParent" type="1" value="False" />
+		<setting name="KeyPressingDelay" type="2" value="100" />
+		<setting name="MouseMovementDelay" type="2" value="0" />
+		<setting name="ObjectMapping_Objects" type="6" rowIndex="-1" colIndex="3">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="OpenApps_ActivateSystemProcesses" type="1" value="False" />
+		<setting name="OpenApps_DbgAgent_AdvancedExceptionHandling" type="1" value="True" />
+		<setting name="OpenApps_DbgAgent_CombineClassDefinitions" type="1" value="False" />
+		<setting name="OpenApps_DbgAgent_EnableDebugAgent" type="1" value="True" />
+		<setting name="OpenApps_DbgAgent_StringLengthLimit" type="2" value="1024" />
+		<setting name="OpenApps_DbgAgent_UseStaticLibs" type="1" value="True" />
+		<setting name="OpenApps_EnableMultipleNamesForObjects" type="1" value="False" />
+		<setting name="OpenApps_FlashFlex_InstallFlashInjector" type="1" value="False" />
+		<setting name="OpenApps_FlashFlex_TrustedLocations" type="6" rowIndex="0" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="True" val1="%PRODUCT_LOCATION%\Open Apps\Flex\FlashInjector.swf" />
+			</data>
+		</setting>
+		<setting name="OpenApps_HybridMobile_AccessPolicy" type="1" value="False" />
+		<setting name="OpenApps_HybridMobile_DynamicIdentifiers" type="6" rowIndex="32" colIndex="9">
+			<columns>
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="-1" val2="False" val3="True" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="-1" val2="False" val3="True" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="3" val1="-1" val2="False" val3="True" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="5" val1="-1" val2="False" val3="True" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Other" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="True" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="True" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="True" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="True" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="True" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="True" val4="For IDs containing a string like &quot;ctl00_&quot;, leave only symbols after this string" val5="RegExp" val6=".*(ctl[0-9]+[-_$]+){.*}" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="True" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="True" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="22" val1="-1" val2="False" val3="True" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="True" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="True" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="True" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="29" val1="-1" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="29" val1="-1" val2="False" val3="True" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="True" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+			</data>
+		</setting>
+		<setting name="OpenApps_HybridMobile_IdentificationAttribute" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="ID" />
+				<row val0="Name" />
+			</data>
+		</setting>
+		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="11" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" />
+				<row val0="True" val1="MsoCommandBar*" />
+				<row val0="True" val1="_Ww*" />
+				<row val0="True" val1="OpusApp" />
+				<row val0="True" val1="Vfp*" />
+				<row val0="True" val1="bosa_sdm_Microsoft Word *" />
+				<row val0="False" val1="Internet Explorer_Server" />
+				<row val0="True" val1="XTPToolBar" />
+				<row val0="True" val1="XTPDockingPaneTabbedContainer" />
+				<row val0="True" val1="XTPTaskPanel" />
+				<row val0="True" val1="XTPReport" />
+				<row val0="True" val1="XTPPopupBar" />
+			</data>
+		</setting>
+		<setting name="OpenApps_MSAA_TreeModel" type="1" value="False" />
+		<setting name="OpenApps_PriorityOfObjects" type="6" rowIndex="13" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="NativeVBObject" />
+				<row val0="NativeDelphiObject" />
+				<row val0="NativeTextObject" />
+				<row val0="NativeJavaObject" />
+				<row val0="NativeClrObject" />
+				<row val0="NativeCPPObject" />
+				<row val0="NativeJavaFXObject" />
+				<row val0="NativeQtObject" />
+				<row val0="NativeUIAObject" />
+				<row val0="NativeMSAA" />
+				<row val0="NativeSlObject" />
+				<row val0="NativeWebObject" />
+				<row val0="NativeChromeObject" />
+				<row val0="NativeFirefoxObject" />
+			</data>
+		</setting>
+		<setting name="OpenApps_ProcessFilter_ProcessFilterMode" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Use all processes" />
+				<row val0="Use only tested applications" />
+				<row val0="Use only selected processes" />
+				<row val0="Ignore selected processes" />
+			</data>
+		</setting>
+		<setting name="OpenApps_ProcessFilter_ProcessList" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="OpenApps_UIA_ListOfAcceptedWindows" type="6" rowIndex="4" colIndex="0">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" />
+				<row val0="True" val1="DirectUIHWND" />
+				<row val0="True" val1="Windows.UI.Core.CoreWindow" />
+				<row val0="True" val1="SysHeader32" />
+				<row val0="True" val1="CtrlNotifySink" />
+			</data>
+		</setting>
+		<setting name="OpenApps_UseNativeObjectNames" type="1" value="True" />
+		<setting name="OpenApps_Web_AddCommentsForWaitMethod" type="1" value="False" />
+		<setting name="OpenApps_Web_CSSTransitionForPagePicture" type="1" value="True" />
+		<setting name="OpenApps_Web_CustomAttributes_AttributesForNameMapping" type="6" rowIndex="0" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="True" val1="data-test-id" />
+				<row val0="True" val1="data-testid" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_EnableSupportForWebComponents" type="1" value="False" />
+		<setting name="OpenApps_Web_ObjIdentification_DynamicIdentifiers" type="6" rowIndex="32" colIndex="9">
+			<columns>
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="-1" val2="False" val3="False" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="-1" val2="False" val3="False" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="3" val1="-1" val2="False" val3="False" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="5" val1="-1" val2="False" val3="False" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Other" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="False" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="False" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="False" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="False" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="7" val1="-1" val2="False" val3="False" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="False" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="False" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="13" val1="-1" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;ctl00_MainContent_username&quot;" val5="RegExp" val6=".*(ctl[0-9]+)(.*)[-_$]+{[^_0-9]+}{[_0-9]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="False" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="False" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="False" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="17" val1="-1" val2="False" val3="False" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="22" val1="-1" val2="False" val3="False" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="False" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="False" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="24" val1="-1" val2="False" val3="False" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="29" val1="-1" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="29" val1="-1" val2="False" val3="False" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="-1" val2="True" val3="False" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_ObjIdentification_IdentificationAttribute" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="ID" />
+				<row val0="Name" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_RecordTestedHost" type="5" value="" />
+		<setting name="OpenApps_Web_TestedHost" type="5" value="" />
+		<setting name="OpenApps_Web_TreeModel" type="6" rowIndex="3" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="DOM" />
+				<row val0="Tag" />
+				<row val0="Hybrid" />
+				<row val0="Tree" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_URLProcessing_DynamicParameters" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="*" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_URLProcessing_IgnoreDynamicURLParameters" type="1" value="True" />
+		<setting name="OpenApps_Web_UseCSSPixels" type="1" value="True" />
+		<setting name="OpenApps_Web_UseLegacyWebTestingFeatures" type="1" value="False" />
+		<setting name="OpenApps_Web_VirtBrowsers_AdvancedMode" type="1" value="False" />
+		<setting name="OpenApps_Web_VirtBrowsers_AutoLaunchWhenRecording" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="None" />
+				<row val0="Apple iPad" />
+				<row val0="Apple iPhone 5/SE" />
+				<row val0="iPhone 6/7/8" />
+				<row val0="iPhone 6/7/8 Plus" />
+				<row val0="Apple iPhone X" />
+				<row val0="Google Pixel 2" />
+				<row val0="Samsung Galaxy Note 9" />
+				<row val0="Samsung Galaxy S9" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_VirtBrowsers_List" type="6" rowIndex="7" colIndex="9">
+			<columns>
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="4" enabled="True" />
+			</columns>
+			<data>
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Apple iPad" val6="Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1" val7="1024" val8="768" val9="2" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Apple iPhone 5/SE" val6="Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1" val7="320" val8="568" val9="2" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="iPhone 6/7/8" val6="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1" val7="375" val8="667" val9="2" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="iPhone 6/7/8 Plus" val6="Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1" val7="414" val8="736" val9="3" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Apple iPhone X" val6="Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1" val7="375" val8="812" val9="3" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Google Pixel 2" val6="Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Mobile Safari/537.36" val7="411" val8="731" val9="2.625" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Samsung Galaxy Note 9" val6="Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36" val7="414" val8="846" val9="3.5" />
+				<row val0="-1" val1="-1" val2="False" val3="True" val4="False" val5="Samsung Galaxy S9" val6="Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36" val7="360" val8="740" val9="4" />
+			</data>
+		</setting>
+		<setting name="OpenApps_Web_WebPageLoadingTimeout" type="2" value="60000" />
+		<setting name="OpenApps_WPF_CompositeControls" type="6" rowIndex="34" colIndex="0">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="True" val1="DpmTrainControl" val2="" />
+				<row val0="True" val1="StatisticResult" val2="" />
+				<row val0="True" val1="ParamControl" val2="" />
+				<row val0="True" val1="AsciiTable" val2="" />
+				<row val0="True" val1="ExplicitUpdateIntegerUpDown" val2="" />
+				<row val0="True" val1="NonLogicalAdornerDecorator" val2="" />
+				<row val0="True" val1="ConnectionAdorner" val2="" />
+				<row val0="True" val1="FieldEditingControl" val2="" />
+				<row val0="True" val1="LabelList" val2="" />
+				<row val0="True" val1="ResultParcelList" val2="" />
+				<row val0="True" val1="IpAddress" val2="" />
+				<row val0="True" val1="AdornerLayer" val2="" />
+				<row val0="True" val1="VisionToolRoiControl" val2="" />
+				<row val0="True" val1="VisionControl" val2="" />
+				<row val0="True" val1="SelectedBorde" val2="" />
+				<row val0="True" val1="DesignerItem" val2="" />
+				<row val0="True" val1="PART_DragThumb" val2="" />
+				<row val0="True" val1="EventItem" val2="" />
+				<row val0="True" val1="ListBox" val2="" />
+				<row val0="True" val1="ControlToolBar" val2="" />
+				<row val0="True" val1="ListBoxItem" val2="" />
+				<row val0="True" val1="ExplicitUpdateDoubleUpDown" val2="" />
+				<row val0="True" val1="PART_ContentPresenter" val2="" />
+				<row val0="True" val1="QuickSetupControlPanel" val2="" />
+				<row val0="True" val1="Window" val2="" />
+				<row val0="True" val1="Hyperlink" val2="" />
+				<row val0="True" val1="Terminal" val2="" />
+				<row val0="True" val1="PopupRoot" val2="" />
+				<row val0="True" val1="EditableListControl" val2="" />
+				<row val0="True" val1="listb" val2="" />
+				<row val0="True" val1="rtbText" val2="" />
+				<row val0="True" val1="AvalonScriptEdit" val2="" />
+				<row val0="True" val1="PART_DragThumb" val2="" />
+				<row val0="True" val1="PART_ContentPresenter" val2="" />
+				<row val0="True" val1="SysListView32" val2="" />
+			</data>
+		</setting>
+		<setting name="OpenApps_WPF_ItemsTemplates" type="6" rowIndex="2" colIndex="0">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="True" val1="FieldEditingControl" val2="" />
+				<row val0="True" val1="InnerBorder2" val2="" />
+				<row val0="True" val1="AdornerLayer" val2="" />
+			</data>
+		</setting>
+		<setting name="OpenApps_WPF_SimplifiedWPFObjectTree" type="1" value="False" />
+		<setting name="PerformanceCounters_List" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="0" colIndex="1">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Continue running" val1="0" />
+				<row val0="Stop project" val1="1" />
+				<row val0="Stop current item" val1="2" />
+			</data>
+		</setting>
+		<setting name="Playback_ErrHandling_OnObjectRecognitionError" type="6" rowIndex="0" colIndex="1">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Continue running" val1="0" />
+				<row val0="Stop project" val1="1" />
+				<row val0="Stop current item" val1="2" />
+			</data>
+		</setting>
+		<setting name="Playback_ErrHandling_OnWarning" type="6" rowIndex="0" colIndex="1">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Continue running" val1="0" />
+				<row val0="Stop project" val1="1" />
+				<row val0="Stop current item" val1="2" />
+			</data>
+		</setting>
+		<setting name="Playback_ErrHandling_ShowErrorDialog" type="1" value="True" />
+		<setting name="Playback_Log_AutosaveInterval" type="2" value="0" />
+		<setting name="Playback_Log_EventCount" type="2" value="0" />
+		<setting name="Playback_Log_PostImageOnError" type="1" value="True" />
+		<setting name="Playback_ObjectSearchStrategy" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Depth-first" />
+				<row val0="Breadth-first" />
+			</data>
+		</setting>
+		<setting name="Playback_OverlappingWindow_IgnoreOverlappingWindow" type="1" value="True" />
+		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="1500" />
+		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="1000" />
+		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
+		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="True" />
+		<setting name="Playback_StopOnError" type="1" value="False" />
+		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
+		<setting name="Playback_StopOnWarning" type="1" value="False" />
+		<setting name="Playback_UnexpectedWndHandling_ClickOnFocusedControl" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="False" />
+		<setting name="Playback_UnexpectedWndHandling_PressEnter" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_PressEsc" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_SendCloseCommand" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_StopExecution" type="1" value="True" />
+		<setting name="Recording_TestedAppsOnly" type="1" value="False" />
+		<setting name="RecreateActiveXObjects" type="1" value="False" />
+		<setting name="RunStandaloneServer" type="1" value="False" />
+		<setting name="StandaloneServerAdditionalOptions" type="5" value="" />
+		<setting name="StandaloneServerPort" type="2" value="4444" />
+		<setting name="TextRecognizer_AcceptedProcesses" type="6" rowIndex="-1" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="-1" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="Visualizer_AutoUpdate" type="1" value="False" />
+		<setting name="Visualizer_AutoUpdateMode" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Update existing frames and capture new frames, if needed" />
+				<row val0="Update existing frames only" />
+			</data>
+		</setting>
+		<setting name="Visualizer_BindToSCC" type="1" value="False" />
+		<setting name="Visualizer_CaptureStyle" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Top-level parent" />
+				<row val0="Desktop" />
+			</data>
+		</setting>
+		<setting name="Visualizer_DeleteAll" type="1" value="True" />
+		<setting name="Visualizer_PlaybackCaptureProperties" type="1" value="False" />
+		<setting name="Visualizer_PlaybackCollectMode" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Off" />
+				<row val0="Capture images" />
+			</data>
+		</setting>
+		<setting name="Visualizer_RecordingCaptureProperties" type="1" value="False" />
+		<setting name="Visualizer_RecordingCollectMode" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Off" />
+				<row val0="Capture images" />
+			</data>
+		</setting>
+		<setting name="Visualizer_UseDuringPlayback" type="1" value="True" />
+		<setting name="Visualizer_UseDuringRecording" type="1" value="True" />
+		<setting name="ZFJ_Cycle" type="5" value="" />
+		<setting name="ZFJ_ExecutionStatus_Failed" type="5" value="FAIL" />
+		<setting name="ZFJ_ExecutionStatus_Passed" type="5" value="PASS" />
+		<setting name="ZFJ_ExecutionStatus_Wip" type="5" value="WIP" />
+		<setting name="ZFJ_ExecutionStepStatus_Unexecuted" type="5" value="UNEXECUTED" />
+		<setting name="ZFJ_InstanceType" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Zephyr for Jira Server" />
+				<row val0="Zephyr for Jira Cloud" />
+			</data>
+		</setting>
+		<setting name="ZFJ_JiraLogin" type="5" value="" />
+		<setting name="ZFJ_JiraPassword" type="5" value="" />
+		<setting name="ZFJ_JiraProject" type="5" value="" />
+		<setting name="ZFJ_JiraUrl" type="5" value="" />
+		<setting name="ZFJ_TestIssueTypeName" type="5" value="Test" />
+		<setting name="ZFJ_Version" type="5" value="" />
+		<setting name="ZFJ_ZephyrAccessKey" type="5" value="" />
+		<setting name="ZFJ_ZephyrSecretKey" type="5" value="" />
+	</settings>
+	<analysis key="{F15335FA-5A7A-449D-8741-2308126D3444}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<issueTracking key="{3AB43DB2-F3F1-4639-B9B8-D305C612E6D3}">
+		<Templates>
+			<Template Id="{1EB17ADF-E4EB-404D-97DC-AD758A1E8C1D}" ConnectionId="{00000000-0000-0000-0000-000000000000}" Description="This template is used by TestComplete&apos;s Log subsystem to post test results to an issue-tracking system. You can also use it at your desire." Name="CreateWorkItem" IsSystem="True" ItemTypeName="" ProjectName="" IsEditing="False" ItemId="">
+				<Fields>
+					<Field ItemId="{A7F7B51F-BC2D-42AF-9D0F-A4E6E5F5B24F}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
+					<Field ItemId="{259A08F0-7A28-4717-8A50-6FE4023686E8}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
+				</Fields>
+			</Template>
+		</Templates>
+	</issueTracking>
+</Root>

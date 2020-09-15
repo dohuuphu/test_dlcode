@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
+				<Prp name="default project" type="S" value="{9FCC25AB-0B4F-4CB2-B8A2-2E0BF5950445}"/>
+			</Node>
+			<Node name="{9fcc25ab-0b4f-4cb2-b8a2-2e0bf5950445}">
+				<Prp name="relpath" type="S" value="DL.CODE_1.9.0.mds.tcLS"/>
+			</Node>
+			<Node name="envmngrlogs">
+				<Prp name="key" type="S" value="{80071AB0-73D2-470F-B336-766A9FC6A178}"/>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{1182F4BA-3898-4630-AC46-C208C01AE2CA}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables"/>
+		</Node>
+		<Prp name="signature" type="S" value="{71078212-FAEB-4856-A901-B237C89E6B5C}"/>
+	</Node>
+</Nodes>
